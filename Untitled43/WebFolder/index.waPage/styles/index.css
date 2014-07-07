@@ -3,12 +3,57 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#label2 {
+	z-index: 8;
+	width: 107px;
+	height: 13px;
+	top: 51px;
+	left: 511px;
+	position: absolute;
+}
+
+#label1 {
+	z-index: 7;
+	width: 100px;
+	height: 13px;
+	top: 54px;
+	left: 67px;
+	position: absolute;
+}
+
+#dataGrid2 {
+	z-index: 4;
+	width: 300px;
+	height: 300px;
+	top: 69px;
+	left: 511px;
+	position: absolute;
+}
+
 #dataGrid1 {
 	z-index: 2;
 	width: 330px;
 	height: 300px;
-	top: 84px;
-	left: 161px;
+	top: 72px;
+	left: 67px;
+	position: absolute;
+}
+
+#getValues_on_person {
+	z-index: 5;
+	width: 178px;
+	height: 28px;
+	top: 416px;
+	left: 130px;
+	position: absolute;
+}
+
+#getValues_on_arr1 {
+	z-index: 6;
+	width: 155px;
+	height: 29px;
+	top: 417px;
+	left: 606px;
 	position: absolute;
 }
 

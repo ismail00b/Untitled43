@@ -8,13 +8,19 @@
 		<meta name="WAF.catalog" content="Person"/>
 		<meta name="wakanda-version" content="Dev build 0.165178"/>
 		<meta name="wakanda-build" content="0.165178"/>
-		<meta id="waf-interface-css" name="WAF.config.loadCSS" content="styles/index.css"/>
-		<meta id="waf-project-css" name="WAF.config.loadCSS" content="/application.css"/>
+		<meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"/>
+		<meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"/>
 
-		<meta data-type="dataSource" data-lib="WAF" data-source="Person" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="person" content="person"/></head>
-	<body id="waf-body" data-type="document" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-lib="WAF" data-entire-model="false" data-platform="desktop" data-viewport-width="device-width" data-viewport-initial-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-minimum-scale="1.0" data-apple-meta-tags-status-bar="default" data-workspace-device="desktop" data-workspace-orientation="portrait" data-workspace-width="0" data-workspace-height="0" data-group="[]" data-theme="default" style="bottom:;right:;visibility:hidden;">
-		<div id="dataGrid1" data-type="dataGrid" data-lib="WAF" data-binding="person" class="waf-widget waf-dataGrid" data-label="" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID','type':'long'},{'sourceAttID':'name','colID':'name','width':'150','title':'name','type':'string'},{'sourceAttID':'age','colID':'age','width':'70','title':'age','type':'long'}]" data-constraint-left="true" data-constraint-top="true"></div>
-	
+		<meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Person" data-lib="WAF" data-id="person" data-dataType="string" data-autoLoad="true" content="person"/>
+		<meta data-type="dataSource" data-lib="WAF" data-source="arr1" data-source-type="array" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-id="arr1" data-attributes="ID:number:key,name:string,age:string" content="arr1"/><meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"/>
+</head>
+	<body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait" data-workspace-height="0" data-workspace-device="desktop" data-viewport-width="device-width" data-viewport-minimum-scale="1.0" data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document" data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc" data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[]" data-entire-model="false" data-apple-meta-tags-status-bar="default" style="bottom:;right:;visibility:hidden;">
+		<div id="dataGrid1" data-type="dataGrid" data-selection-mode="single" data-lib="WAF" data-label-position="top" data-label="person (server DS)" data-footer-text="item(s)" data-display-error="true" data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID','type':'long'},{'sourceAttID':'name','colID':'name','width':'150','title':'name','type':'string'},{'sourceAttID':'age','colID':'age','width':'70','title':'age','type':'long'}]" data-binding="person" class="waf-widget waf-dataGrid"></div>
+	<div id="dataGrid2" data-type="dataGrid" data-lib="WAF" data-binding="arr1" class="waf-widget waf-dataGrid" data-label="arr1 (array local DS)" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'ID','colID':'ID','width':'90','title':'ID','type':'number'},{'sourceAttID':'name','colID':'name','width':'150','title':'name','type':'string'},{'sourceAttID':'age','colID':'age','width':'150','title':'age','type':'string'}]" data-constraint-left="true" data-constraint-top="true"></div>
+		<button id="getValues_on_person" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-constraint-left="true" data-constraint-top="true" data-text="getValues on person"></button>
+		<button id="getValues_on_arr1" data-type="button" data-lib="WAF" class="waf-widget waf-button" data-action="simple" data-target="_blank" data-constraint-left="true" data-constraint-top="true" data-text="getValues on arr1"></button>
+		<label id="label1" data-type="label" data-lib="WAF" for="dataGrid1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-datagrid" data-constraint-left="true" data-constraint-top="true">person (server DS)</label>
+		<label id="label2" data-type="label" data-lib="WAF" for="dataGrid2" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-datagrid" data-constraint-left="true" data-constraint-top="true">arr1 (array local DS)</label>
 		<script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
-</body>
+	</body>
 </html>
